@@ -37,3 +37,5 @@ GET /api/v1/characters/1
   "alias": "Attack Titan"
 }
 ```
+## Using Fandom Content
+This API uses material from the [list of characters/Anime](https://attackontitan.fandom.com/wiki/List_of_characters/Anime) on the Attack on Titan wiki Fandom website and is licensed under the [Creative Commons Attribution-Share Alike License](https://creativecommons.org/licenses/by-sa/3.0/).
