@@ -1,2 +1,8 @@
-<h1 class="ml-5 mt-5 mb-5">Welcome to API Attack on Titan</h1>
-<%= link_to "All characters", api_v1_characters_path, class: "ml-5 btn btn-primary" %>
+<div class="d-flex align-items-end justify-content-center">
+  <h1 class="ml-5 mt-5 mb-5">Welcome to API Attack on Titan</h1>
+  <%= link_to "All characters", api_v1_characters_path, class: "ml-5 mb-5 btn btn-primary" %><br>
+</div>
+<h2 class="ml-5">All characters</h2>
+<% @characters.each do |character| %>
+  <%= link_to "#{character.first_name}", api_v1_character_path(character), class:"ml-5" %><br>
+<% end %>
