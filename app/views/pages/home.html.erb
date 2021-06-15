@@ -9,7 +9,52 @@
   <%= submit_tag "Search", class: "btn btn-primary" %>
 <% end %>
 
-<h2 class="ml-5">All <%= @characters.count %> characters</h2>
-<% @characters.each do |character| %>
-  <%= link_to "#{character.first_name}", api_v1_character_path(character), class:"ml-5" %><br>
-<% end %>
+<div class="d-flex flex-column align-items-center">
+  <h2>Get all <%= @characters.count %> characters</h2>
+  <p>You can access the list of characters by using the   <code>GET /api/v1/characters</code> endpoint.</p>
+  <pre>
+    [
+      {
+        "id": 1,
+        "first_name": "Armin",
+        "last_name": "Arlelt",
+        "species": "Armin Arlert[2]",
+        "age": null,
+        "height": 15,
+        "residence": "Alive",
+        "status": "Soldier",
+        "alias": "Colossal Titan"
+        },
+        {
+        "id": 2,
+        "first_name": "Mikasa",
+        "last_name": "Ackermann",
+        "species": "Human",
+        "age": 15,
+        "height": 0,
+        "residence": " Scout RegimentSpecial Operations Squad",
+        "status": " 104th Cadet CorpsElite Squad",
+        "alias": null
+        },
+        // ...
+    ]
+  </pre>
+
+  <h2 class="ml-5">Get a single character</h2>
+  <p>You can get a single character by adding the <code>id</code> as a parameter: <code>GET /api/v1/characters/1</code></p>
+  <pre>
+    [
+      {
+        "id": 1,
+        "first_name": "Armin",
+        "last_name": "Arlelt",
+        "species": "Armin Arlert[2]",
+        "age": null,
+        "height": 15,
+        "residence": "Alive",
+        "status": "Soldier",
+        "alias": "Colossal Titan"
+        }
+    ]
+  </pre>
+</div>
