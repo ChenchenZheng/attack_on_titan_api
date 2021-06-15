@@ -4,53 +4,38 @@ This is a free, easy-to-use and open-source API for anime Attack on Titan built 
 [AttackOnTitanApi](https://api-attack-on-titan.herokuapp.com/) provides a list of all characters in anime Attack on Titan.
 
 Here are some examples:
+### If you want to get all characters
 ```
 GET /api/v1/characters
 ```
 ```
-[
+ [
   {
     "id": 1,
     "first_name": "Armin",
-    "last_name": "Arlelt"
-  },
-  {
+    "last_name": "Arlelt",
+    "species": "Armin Arlert[2]",
+    "age": null,
+    "height": 15,
+    "residence": "Alive",
+    "status": "Soldier",
+    "alias": "Colossal Titan"
+    },
+    {
     "id": 2,
     "first_name": "Mikasa",
-    "last_name": "Ackermann"
-  },
-  {
-    "id": 3,
-    "first_name": "Hange",
-    "last_name": "Zoë"
-  },
-  {
-    "id": 4,
-    "first_name": "Jean",
-    "last_name": "Kirschtein"
-  },
-  {
-    "id": 5,
-    "first_name": "Conny",
-    "last_name": "Springer"
-  },
-  {
-    "id": 6,
-    "first_name": "Daz",
-    "last_name": "Daz"
-  },
-  {
-    "id": 7,
-    "first_name": "Buchwald",
-    "last_name": "Buchwald"
-  },
-  {
-    "id": 8,
-    "first_name": "Levi",
-    "last_name": "Ackermann"
-  }
+    "last_name": "Ackermann",
+    "species": "Human",
+    "age": 15,
+    "height": 0,
+    "residence": " Scout RegimentSpecial Operations Squad",
+    "status": " 104th Cadet CorpsElite Squad",
+    "alias": null
+    },
+    // ...
 ]
 ```
+### If you want to get a single character
 ```
 GET /api/v1/characters/176
 ```
