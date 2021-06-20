@@ -18,7 +18,7 @@
         "id": 1,
         "first_name": "Armin",
         "last_name": "Arlelt",
-        "species": "Armin Arlert[2]",
+        "species": "Armin Arlert",
         "age": null,
         "height": 15,
         "residence": "Alive",
@@ -48,13 +48,39 @@
         "id": 1,
         "first_name": "Armin",
         "last_name": "Arlelt",
-        "species": "Armin Arlert[2]",
+        "species": "Armin Arlert",
         "age": null,
         "height": 15,
         "residence": "Alive",
         "status": "Soldier",
         "alias": "Colossal Titan"
         }
+    ]
+  </pre>
+
+  <h2>Get all <%= @titans.count %> titans</h2>
+  <p>You can access the list of <%= @titans.count %> titans by using the   <code>GET /api/v1/titans</code> endpoint.</p>
+  <pre>
+    [
+      {
+        "id": 1,
+        "name": "Founding Titan",
+        "other_names": "Coordinate" (座標 Zahyō), Royal family's power (王家の力 Ōke no chikara), "Scream" (叫び Sakebi), "God" (神 Kami)",
+        "abilities": "Titan behavorial control, Memory manipulation of Subjects of Ymir",
+        "current_inheritor": "Eren Jaeger",
+        "former_inheritors": "Grisha Jaeger, Frieda Reiss, Uri Reiss, Rod and Uri's father, Karl Fritz, Ymir Fritz",
+        "allegiance": "Eldia"
+        },
+        {
+        "id": 2,
+        "name": "Armored Titan",
+        "other_names": "Armor" (鎧 Yoroi), "Marley's Shield" (マーレの盾 Māre no tate)",
+        "abilities": "Armored skin, Hardening",
+        "current_inheritor": "Reiner Braun",
+        "former_inheritors": null,
+        "allegiance": "Marley"
+        },
+        // ...
     ]
   </pre>
 </div>

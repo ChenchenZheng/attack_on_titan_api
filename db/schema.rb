@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_18_095512) do
+ActiveRecord::Schema.define(version: 2021_06_20_073300) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,17 @@ ActiveRecord::Schema.define(version: 2021_06_18_095512) do
     t.string "residence"
     t.string "status"
     t.string "alias"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "titans", force: :cascade do |t|
+    t.string "name"
+    t.string "other_names"
+    t.text "abilities"
+    t.string "current_inheritor"
+    t.string "former_inheritors"
+    t.string "allegiance"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
