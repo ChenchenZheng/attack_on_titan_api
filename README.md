@@ -52,5 +52,33 @@ GET /api/v1/characters/176
   "alias": "Suicidal Maniac (死に急ぎ野郎 Shi ni isogi yarō?)[1]Titan boy (巨人の小僧 Kyojin no kozō?)[2]Attack Titan (進撃の巨人 Shingeki no Kyojin?)[3]Mysterious Titan (謎の巨人 Nazo no Kyojin?)[4]Berserk Titan (巨人が暴れてる Kyojin ga Abareteru?, lit. Titan being rampant)[5]/Crazy-berserker Titan[6]Founding Titan (始祖の巨人 Shiso no Kyojin?)[7]Founder (始祖 Shiso?)Mister Kruger (クルーガーさん Kurūgā-san?)[8]Usurper (簒奪者 Sandatsu-sha?)[9]War Hammer Titan"
   }
 ```
+
+### If you want to get all nine titans
+```
+GET /api/v1/titans
+```
+```
+[
+  {
+    "id": 1,
+    "name": "Founding Titan",
+    "other_names": "Coordinate" (座標 Zahyō), Royal family's power (王家の力 Ōke no chikara), "Scream" (叫び Sakebi), "God" (神 Kami)",
+    "abilities": "Titan behavorial control, Memory manipulation of Subjects of Ymir",
+    "current_inheritor": "Eren Jaeger",
+    "former_inheritors": "Grisha Jaeger, Frieda Reiss, Uri Reiss, Rod and Uri's father, Karl Fritz, Ymir Fritz",
+    "allegiance": "Eldia"
+    },
+    {
+    "id": 2,
+    "name": "Armored Titan",
+    "other_names": "Armor" (鎧 Yoroi), "Marley's Shield" (マーレの盾 Māre no tate)",
+    "abilities": "Armored skin, Hardening",
+    "current_inheritor": "Reiner Braun",
+    "former_inheritors": null,
+    "allegiance": "Marley"
+    },
+    // ...
+]
+```
 ## Using Fandom Content
 This API uses material from the [list of characters/Anime](https://attackontitan.fandom.com/wiki/List_of_characters/Anime) on the Attack on Titan wiki Fandom website and is licensed under the [Creative Commons Attribution-Share Alike License](https://creativecommons.org/licenses/by-sa/3.0/).
