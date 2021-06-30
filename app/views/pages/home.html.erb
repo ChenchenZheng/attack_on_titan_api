@@ -11,7 +11,7 @@
 
 <div class="d-flex flex-column align-items-center">
   <h2>Get all <%= @characters.count %> characters</h2>
-  <p>You can access the list of characters by using the   <code>GET /api/v1/characters</code> endpoint.</p>
+  <p>You can access the list of characters by using the   <code>/api/v1/characters</code> endpoint.</p>
   <pre>
     [
       {
@@ -41,7 +41,7 @@
   </pre>
 
   <h2 class="ml-5">Get a single character</h2>
-  <p>You can get a single character by adding the <code>id</code> as a parameter: <code>GET /api/v1/characters/1</code></p>
+  <p>You can get a single character by adding the <code>id</code> as a parameter: <code>/api/v1/characters/1</code></p>
   <pre>
     [
       {
@@ -59,7 +59,7 @@
   </pre>
 
   <h2>Get all <%= @titans.count %> titans</h2>
-  <p>You can access the list of <%= @titans.count %> titans by using the   <code>GET /api/v1/titans</code> endpoint.</p>
+  <p>You can access the list of <%= @titans.count %> titans by using the   <code>/api/v1/titans</code> endpoint.</p>
   <pre>
     [
       {
@@ -81,6 +81,22 @@
         "allegiance": "Marley"
         },
         // ...
+    ]
+  </pre>
+
+  <h2 class="ml-5">Get a single titan</h2>
+  <p>You can get a single titan by adding the <code>id</code> as a parameter: <code>/api/v1/titans/1</code></p>
+  <pre>
+    [
+      {
+        "id": 1,
+        "name": "Founding Titan",
+        "other_names": "Coordinate" (座標 Zahyō), Royal family's power (王家の力 Ōke no chikara), "Scream" (叫び Sakebi), "God" (神 Kami)",
+        "abilities": "Titan behavorial control, Memory manipulation of Subjects of Ymir",
+        "current_inheritor": "Eren Jaeger",
+        "former_inheritors": "Grisha Jaeger, Frieda Reiss, Uri Reiss, Rod and Uri's father, Karl Fritz, Ymir Fritz",
+        "allegiance": "Eldia"
+        }
     ]
   </pre>
 </div>
