@@ -1,7 +1,7 @@
 # Attack on Titan API
-This is a free, easy-to-use and open-source API for anime Attack on Titan built with Ruby and Ruby on Rails.
+[AttackOnTitanApi](https://api-attack-on-titan.herokuapp.com/) is a free, easy-to-use and open-source API for anime Attack on Titan built with Ruby on Rails.
 ## Usage
-[AttackOnTitanApi](https://api-attack-on-titan.herokuapp.com/) provides a list of all characters in anime Attack on Titan.
+[AttackOnTitanApi](https://api-attack-on-titan.herokuapp.com/) provides a list of all characters and titans in anime Attack on Titan.
 
 Here are some examples:
 ### If you want to get all characters
@@ -78,6 +78,23 @@ GET /api/v1/titans
     "allegiance": "Marley"
     },
     // ...
+]
+```
+### If you want to get a single titan
+```
+GET /api/v1/titans/1
+```
+```
+[
+  {
+    "id": 1,
+    "name": "Founding Titan",
+    "other_names": "Coordinate" (座標 Zahyō), Royal family's power (王家の力 Ōke no chikara), "Scream" (叫び Sakebi), "God" (神 Kami)",
+    "abilities": "Titan behavorial control, Memory manipulation of Subjects of Ymir",
+    "current_inheritor": "Eren Jaeger",
+    "former_inheritors": "Grisha Jaeger, Frieda Reiss, Uri Reiss, Rod and Uri's father, Karl Fritz, Ymir Fritz",
+    "allegiance": "Eldia"
+    }
 ]
 ```
 ## Using Fandom Content
