@@ -6,7 +6,7 @@ class Api::V1::CharactersController < ApplicationController
       sql_query = "first_name ILIKE :query OR last_name ILIKE :query"
       @characters = Character.where(sql_query, query: "%#{params[:query]}%")
     else
-      @characters = Character.all
+      @characters = Character.all.order(:id)
     end
   end
 

@@ -2,7 +2,7 @@ class Api::V1::TitansController < Api::V1::BaseController
   before_action :set_titan, only: [:show]
 
   def index
-    @titans = Titan.all
+    @titans = Titan.all.order(:id)
   end
 
   def show
