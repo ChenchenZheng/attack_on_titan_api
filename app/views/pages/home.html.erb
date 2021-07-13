@@ -10,8 +10,74 @@
 <% end %>
 
 <div class="d-flex flex-column align-items-center">
-  <h2>Get all <%= @characters.count %> characters</h2>
+  <h2>Character</h2>
+  <p>There is a total of <%= @characters.count %> characters sorted by id.</p>
+  <h3>Character schema</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Key</th>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>id</td>
+              <td>integer</td>
+              <td>The id of the character</td>
+            </tr>
+            <tr>
+              <td>first_name</td>
+              <td>string</td>
+              <td>The first name of the character</td>
+            </tr>
+            <tr>
+              <td>last_name</td>
+              <td>string</td>
+              <td>The last name of the character</td>
+            </tr>
+            <tr>
+              <td>species</td>
+              <td>string</td>
+              <td>The species of the character ('Intelligent Titan', 'Human' or 'Unknown')</td>
+            </tr>
+            <tr>
+              <td>age</td>
+              <td>integer</td>
+              <td>The age of the character</td>
+            </tr>
+            <tr>
+              <td>height</td>
+              <td>integer</td>
+              <td>The height of the character when transformed into a titan</td>
+            </tr>
+            <tr>
+              <td>residence</td>
+              <td>string</td>
+              <td>The residence of the character</td>
+            </tr>
+            <tr>
+              <td>status</td>
+              <td>string</td>
+              <td>The status of the character ('Alive', 'Deceased' or 'Unknown')</td>
+            </tr>
+            <tr>
+              <td>alias</td>
+              <td>string</td>
+              <td>The alias of the character</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <h3>Get all characters</h3>
   <p>You can access the list of characters by using the   <code>/api/v1/characters</code> endpoint.</p>
+  <code>GET https://api-attack-on-titan.herokuapp.com/api/v1/characters</code>
   <pre>
     [
       {
@@ -40,8 +106,9 @@
     ]
   </pre>
 
-  <h2 class="ml-5">Get a single character</h2>
+  <h3 class="ml-5">Get a single character</h3>
   <p>You can get a single character by adding the <code>id</code> as a parameter: <code>/api/v1/characters/1</code></p>
+  <code>GET https://api-attack-on-titan.herokuapp.com/api/v1/characters/1</code>
   <pre>
     [
       {
