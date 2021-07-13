@@ -125,14 +125,70 @@
     ]
   </pre>
 
-  <h2>Get all <%= @titans.count %> titans</h2>
+  <h2>Titan</h2>
+  <p>There is a total of <%= @titans.count %> characters sorted by id.</p>
+  <h3>Titan schema</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Key</th>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>id</td>
+              <td>integer</td>
+              <td>The id of the titan</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>string</td>
+              <td>The name of the titan</td>
+            </tr>
+            <tr>
+              <td>other_names</td>
+              <td>string</td>
+              <td>The other names of the titan</td>
+            </tr>
+            <tr>
+              <td>abilities</td>
+              <td>string</td>
+              <td>The abilities of the titan</td>
+            </tr>
+            <tr>
+              <td>current_inheritor</td>
+              <td>string</td>
+              <td>The current inheritor of the titan</td>
+            </tr>
+            <tr>
+              <td>former_inheritors</td>
+              <td>string</td>
+              <td>The former inheritors of the titan</td>
+            </tr>
+            <tr>
+              <td>allegiance</td>
+              <td>string</td>
+              <td>The allegiance of the titan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <h3>Get all titans</h3>
   <p>You can access the list of <%= @titans.count %> titans by using the   <code>/api/v1/titans</code> endpoint.</p>
+  <code>GET https://api-attack-on-titan.herokuapp.com/api/v1/titans</code>
   <pre>
     [
       {
         "id": 1,
         "name": "Founding Titan",
-        "other_names": "Coordinate" (座標 Zahyō), Royal family's power (王家の力 Ōke no chikara), "Scream" (叫び Sakebi), "God" (神 Kami)",
+        "other_names": "Coordinate, Royal family's power, Scream, God",
         "abilities": "Titan behavorial control, Memory manipulation of Subjects of Ymir",
         "current_inheritor": "Eren Jaeger",
         "former_inheritors": "Grisha Jaeger, Frieda Reiss, Uri Reiss, Rod and Uri's father, Karl Fritz, Ymir Fritz",
@@ -141,7 +197,7 @@
         {
         "id": 2,
         "name": "Armored Titan",
-        "other_names": "Armor" (鎧 Yoroi), "Marley's Shield" (マーレの盾 Māre no tate)",
+        "other_names": "Armor, Marley's Shield",
         "abilities": "Armored skin, Hardening",
         "current_inheritor": "Reiner Braun",
         "former_inheritors": null,
@@ -151,14 +207,15 @@
     ]
   </pre>
 
-  <h2 class="ml-5">Get a single titan</h2>
+  <h3 class="ml-5">Get a single titan</h3>
   <p>You can get a single titan by adding the <code>id</code> as a parameter: <code>/api/v1/titans/1</code></p>
+  <code>GET https://api-attack-on-titan.herokuapp.com/api/v1/titans/1</code>
   <pre>
     [
       {
         "id": 1,
         "name": "Founding Titan",
-        "other_names": "Coordinate" (座標 Zahyō), Royal family's power (王家の力 Ōke no chikara), "Scream" (叫び Sakebi), "God" (神 Kami)",
+        "other_names": "Coordinate, Royal family's power, Scream, God",
         "abilities": "Titan behavorial control, Memory manipulation of Subjects of Ymir",
         "current_inheritor": "Eren Jaeger",
         "former_inheritors": "Grisha Jaeger, Frieda Reiss, Uri Reiss, Rod and Uri's father, Karl Fritz, Ymir Fritz",
