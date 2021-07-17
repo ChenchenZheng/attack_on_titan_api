@@ -35,6 +35,7 @@ gem 'devise'
 gem 'rails_admin', '~> 2.0'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 5.0.0'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
