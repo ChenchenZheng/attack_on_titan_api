@@ -1,11 +1,14 @@
-.footer-basic {
-  padding:40px 0;
-  color:#FFF;
-  background-color: #0E90DA;
-
-  .social {
+.footer {
+  background: #0E90DA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0px 30px;
+  color: #FFF;
+  
+  .footer-links {
     text-align:center;
-    padding-bottom:25px;
 
     > a {
       font-size:24px;
@@ -19,13 +22,5 @@
       margin:0 8px;
       color:inherit;
     }
-  }
-
-  .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:#FFF;
-    margin-bottom:0;
   }
 }
