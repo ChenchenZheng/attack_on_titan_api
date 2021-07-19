@@ -1,19 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #0E90DA;">
   <%= link_to "Attack on Titan API", root_path, class: "navbar-brand", style: "color: #FFF;" %>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <%= link_to "Home", root_path, class:"nav-link", style: "color: #FFF;" %>
+        <%= link_to "All characters", api_v1_characters_path, class:"nav-link", style: "color: #FFF;" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Get all characters", api_v1_characters_path, class:"nav-link", style: "color: #FFF;" %>
+        <%= link_to "Single character", api_v1_character_path(Character.first), class:"nav-link", style: "color: #FFF;" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Get all titans", api_v1_titans_path, class:"nav-link", style: "color: #FFF;" %>
+        <%= link_to "All titans", api_v1_titans_path, class:"nav-link", style: "color: #FFF;" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Single titan", api_v1_character_path(Titan.first), class:"nav-link", style: "color: #FFF;" %>
       </li>
     </ul>
   </div>
