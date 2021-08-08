@@ -33,6 +33,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'devise'
 gem 'rails_admin', '~> 2.0'
+gem 'simplecov', require: false, group: :test
 
 group :development, :test do
   gem 'rspec-rails', '~> 5.0.0'
