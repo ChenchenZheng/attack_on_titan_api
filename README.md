@@ -1,8 +1,7 @@
-# Attack on Titan API
+# Attack on Titan API (THIS APP IS NO MORE SUPPORTED)
 ![](https://img.shields.io/github/issues/ChenchenZheng/attack_on_titan_api)
 ![](https://img.shields.io/github/license/ChenchenZheng/attack_on_titan_api)
 ![](https://travis-ci.com/ChenchenZheng/attack_on_titan_api.svg?branch=master)
-
 
 [AttackOnTitanApi](https://api-attack-on-titan.herokuapp.com/) is a free, easy-to-use and open-source API for anime Attack on Titan built with Ruby on Rails. It provides a list of all characters and titans in anime Attack on Titan.
 ## Usage
